@@ -1,6 +1,6 @@
 # Portfolio Website - Darel Prasetya Fawwaz
 
-Website portofolio pribadi yang dibuat sebagai tugas Praktikum  Pemrograman Berbasis Web.
+Website portofolio pribadi yang dibuat sebagai tugas Praktikum Pemrograman Berbasis Web.
 
 ---
 
@@ -11,50 +11,51 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum  Pemrograman Berb
 | HTML | Struktur halaman website |
 | CSS3 | Styling tampilan, warna, dan layout |
 | Bootstrap 5 | Navbar, grid system, card, button, utilities |
-| Vue JS  | Menampilkan skill, pengalaman, dan sertifikat secara dinamis |
+| Vue JS | Menampilkan skill, pengalaman, dan sertifikat |
 
 ---
 
 ## Tampilan Setiap Section
 
 ### Navbar
-Navbar fixed di bagian atas halaman dengan background gelap dan garis bawah oranye. Berisi nama sebagai brand dan tiga link navigasi menuju section Home, About Me, dan Certificates. 
+Navbar ada di bagian paling atas halaman, warna gelap dengan garis bawah oranye. Isinya nama dan tiga link buat pindah ke section Home, About Me, dan Certificates.
+
 <img width="1905" height="59" alt="Screenshot 2026-03-01 151213" src="https://github.com/user-attachments/assets/5327cf93-d3b0-44b0-a978-bc3a8965c895" />
 
 ---
 
 ### Section Home
-Halaman pertama yang muncul saat website dibuka. Berisi foto profil berbentuk lingkaran di sebelah kanan, dan di sebelah kiri ada nama lengkap, prodi, deskripsi singkat tentang diri, serta dua tombol menuju section About Me dan Certificates.
-<img width="1903" height="947" alt="Screenshot 2026-03-01 151223" src="https://github.com/user-attachments/assets/a8bab498-23c9-4ab9-96f9-1c3af13f3d7a" />
+Bagian pertama yang muncul waktu buka website. Sebelah kiri ada nama, prodi, deskripsi singkat, dan dua tombol. Sebelah kanan ada foto profil yang dibuat bulat.
 
+<img width="1903" height="947" alt="Screenshot 2026-03-01 151223" src="https://github.com/user-attachments/assets/a8bab498-23c9-4ab9-96f9-1c3af13f3d7a" />
 
 ---
 
 ### Section About Me
-Section ini dibagi jadi tiga bagian. Pertama ada kartu Info Diri yang berisi bio singkat, kota asal, email, dan prodi, semuanya ditulis langsung pakai HTML biasa. Kedua ada kartu Skill yang menampilkan progress bar menggunakan Vue JS, datanya diambil dari array `skills` di dalam `data()`. Ketiga ada bagian Pengalaman yang menampilkan kartu-kartu pengalaman organisasi menggunakan Vue JS dengan looping dari array `pengalaman`.
-<img width="1903" height="826" alt="Screenshot 2026-03-01 151235" src="https://github.com/user-attachments/assets/51dce4d8-80bd-4fca-8964-da66c3aff93f" />
+Ada tiga bagian di sini. Kartu Info Diri berisi bio singkat sama info kontak. Kartu Skill menampilkan progress bar. Terus ada bagian Pengalaman yang isinya kartu-kartu pengalaman organisasi.
 
+<img width="1903" height="826" alt="Screenshot 2026-03-01 151235" src="https://github.com/user-attachments/assets/51dce4d8-80bd-4fca-8964-da66c3aff93f" />
 
 ---
 
 ### Section Certificates
-Menampilkan daftar sertifikat dalam bentuk grid kartu tiga kolom. Setiap kartu berisi gambar sertifikat, judul, penerbit, dan tanggal. Bagian ini menggunakan Vue JS untuk looping data dari array `sertifikat`, jadi kalau mau tambah sertifikat baru tinggal tambah data di scriptnya tanpa perlu edit HTML.
-<img width="1903" height="941" alt="Screenshot 2026-03-01 151244" src="https://github.com/user-attachments/assets/24389a8f-e36c-403b-abf8-fb8ab0dae6f6" />
+Nampilin daftar sertifikat dalam bentuk grid tiga kolom. Tiap kartu ada gambar sertifikat, judul, penerbit, sama tanggal.
 
+<img width="1903" height="941" alt="Screenshot 2026-03-01 151244" src="https://github.com/user-attachments/assets/24389a8f-e36c-403b-abf8-fb8ab0dae6f6" />
 
 ---
 
 ### Footer
-Bagian paling bawah halaman dengan background gelap dan garis atas oranye. Berisi nama dan tulisan singkat.
-<img width="1904" height="102" alt="Screenshot 2026-03-01 151259" src="https://github.com/user-attachments/assets/1fb4ec05-221d-4071-89b2-eb7f25431b41" />
+Bagian paling bawah, background gelap dengan garis atas oranye. Isinya nama dan tulisan singkat.
 
+<img width="1904" height="102" alt="Screenshot 2026-03-01 151259" src="https://github.com/user-attachments/assets/1fb4ec05-221d-4071-89b2-eb7f25431b41" />
 
 ---
 
 ## Penjelasan Code Setiap Section
 
 ### Navbar
-Navbar dibuat pakai komponen navbar dari Bootstrap 5. Class `navbar-expand-lg` bikin navbar otomatis jadi hamburger di layar kecil. `ms-auto` dipakai buat dorong menu ke kanan. Warna dan border bawah oranye diatur lewat CSS sendiri di `style.css`.
+Navbar pakai komponen bawaan Bootstrap 5. Class `navbar-expand-lg` yang bikin navbar otomatis jadi tombol hamburger waktu dibuka di HP. `ms-auto` buat dorong menu ke kanan. Warna gelap dan garis oranye di bawahnya diatur sendiri di `style.css`.
 
 ```html
 <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
@@ -77,7 +78,7 @@ Navbar dibuat pakai komponen navbar dari Bootstrap 5. Class `navbar-expand-lg` b
 ---
 
 ### Section Home
-Layout home pakai grid Bootstrap dengan `row` dan `col-md-7` / `col-md-5` supaya teks dan foto bisa sejajar. `align-items-center` bikin keduanya rata tengah secara vertikal. Foto profil dibuat bulat lewat CSS dengan `border-radius: 50%`. Tombol dibuat custom pakai class `.btn-oren` dan `.btn-outline-oren` yang didefinisikan di `style.css`.
+Layout-nya pakai grid Bootstrap, `col-md-7` buat teks dan `col-md-5` buat foto supaya bisa sejajar. `align-items-center` bikin keduanya rata tengah. Foto dibuat bulat lewat CSS pakai `border-radius: 50%`. Tombolnya pakai class sendiri `.btn-oren` dan `.btn-outline-oren` yang dibuat di `style.css`.
 
 ```html
 <div class="row align-items-center gy-4">
@@ -91,7 +92,7 @@ Layout home pakai grid Bootstrap dengan `row` dan `col-md-7` / `col-md-5` supaya
 ---
 
 ### Section About Me - Skill (Vue JS)
-Bagian skill pakai Vue JS. Elemen dengan `id="app-skill"` dijadikan titik mount Vue. Di dalam HTML dipakai `v-for` buat looping semua data skill, lalu `{{ skill.nama }}` dan `{{ skill.nilai }}` buat nampilin teksnya. Lebar progress bar disambungin ke data pakai `:style`.
+Bagian skill pakai Vue JS. Elemen `id="app-skill"` jadi tempat Vue aktif. `v-for` dipakai buat looping data skill satu-satu, terus `{{ skill.nama }}` dan `{{ skill.nilai }}` buat nampilin teksnya ke layar. Lebar progress bar-nya nyambung ke data skill lewat `:style`.
 
 ```html
 <!-- HTML -->
@@ -122,7 +123,7 @@ createApp({
 ---
 
 ### Section About Me - Pengalaman (Vue JS)
-Pengalaman juga pakai Vue JS dengan cara yang sama. `id="app-pengalaman"` jadi titik mount, lalu `v-for` looping dari array `pengalaman`. Kartu pengalaman pakai Bootstrap grid `col-md-6` supaya tampil dua kolom di layar besar.
+Sama kayak skill, pengalaman juga pakai Vue JS. `id="app-pengalaman"` jadi titik mount-nya, terus `v-for` looping dari array `pengalaman`. Grid Bootstrap `col-md-6` dipakai supaya kartunya tampil dua kolom di layar yang lebih lebar.
 
 ```html
 <!-- HTML -->
@@ -164,7 +165,7 @@ createApp({
 ---
 
 ### Section Certificates (Vue JS)
-Sertifikat pakai Vue JS supaya gampang kalau mau tambah atau ganti data. `id="app-sertifikat"` jadi titik mount, lalu `v-for` looping dari array `sertifikat`. Gambar disambungin pakai `:src` dan `:alt` dari data. Grid pakai `col-md-6 col-lg-4` dari Bootstrap supaya tampil tiga kolom di laptop dan dua kolom di tablet.
+Sertifikat pakai Vue JS biar gampang kalau mau nambah atau ganti data. `id="app-sertifikat"` jadi titik mount, terus `v-for` looping dari array `sertifikat`. Gambarnya nyambung ke data pakai `:src` dan `:alt`. Grid `col-md-6 col-lg-4` dari Bootstrap bikin tampilannya tiga kolom di laptop dan dua kolom di tablet.
 
 ```html
 <!-- HTML -->
@@ -209,7 +210,7 @@ createApp({
 ---
 
 ### Footer
-Footer ditulis pakai HTML biasa. Styling background gelap dan garis atas oranye diatur di `style.css`.
+Footer dibuat dan distyling dengan Background gelap dan garis atas oranye diatur di `style.css`.
 
 ```html
 <footer>
