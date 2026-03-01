@@ -205,8 +205,6 @@ createApp({
 }).mount('#app-skill')
 ```
 
----
-
 ### Section About Me - Pengalaman (Vue JS)
 Sama kayak skill, pengalaman juga pakai Vue JS. `id="app-pengalaman"` jadi titik mount-nya, terus `v-for` looping dari array `pengalaman`. Grid Bootstrap `col-md-6` dipakai supaya kartunya tampil dua kolom di layar yang lebih lebar.
 
