@@ -9,7 +9,7 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum Pemrograman Berba
 | Teknologi | Kegunaan |
 |---|---|
 | HTML | Struktur halaman website |
-| CSS3 | Styling tampilan, warna, dan layout |
+| CSS | Styling tampilan, warna, dan layout |
 | Bootstrap 5 | Navbar, grid system, card, button, utilities |
 | Vue JS | Menampilkan skill, pengalaman, dan sertifikat |
 
@@ -20,42 +20,45 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum Pemrograman Berba
 ### Navbar
 Navbar ada di bagian paling atas halaman, warna gelap dengan garis bawah oranye. Isinya nama dan tiga link buat pindah ke section Home, About Me, dan Certificates.
 
-<img width="1905" height="59" alt="Screenshot 2026-03-01 151213" src="https://github.com/user-attachments/assets/5327cf93-d3b0-44b0-a978-bc3a8965c895" />
+<img width="1905" height="59" alt="Screenshot 2026-03-01 151213" src="https://github.com/user-attachments/assets/ac91ce33-cd1e-40a0-9fb9-d8adb173de9d" />
+
 
 ---
 
 ### Section Home
 Bagian pertama yang muncul waktu buka website. Sebelah kiri ada nama, prodi, deskripsi singkat, dan dua tombol. Sebelah kanan ada foto profil yang dibuat bulat.
 
-<img width="1903" height="947" alt="Screenshot 2026-03-01 151223" src="https://github.com/user-attachments/assets/a8bab498-23c9-4ab9-96f9-1c3af13f3d7a" />
+<img width="1903" height="947" alt="Screenshot 2026-03-01 151223" src="https://github.com/user-attachments/assets/f683a04b-e19a-43ef-9236-2f1fac824333" />
+
 
 ---
 
 ### Section About Me
 Ada tiga bagian di sini. Kartu Info Diri berisi bio singkat sama info kontak. Kartu Skill menampilkan progress bar. Terus ada bagian Pengalaman yang isinya kartu-kartu pengalaman organisasi.
 
-<img width="1903" height="826" alt="Screenshot 2026-03-01 151235" src="https://github.com/user-attachments/assets/51dce4d8-80bd-4fca-8964-da66c3aff93f" />
+<img width="1903" height="826" alt="Screenshot 2026-03-01 151235" src="https://github.com/user-attachments/assets/0517869f-16fb-487e-8ebe-127e8bca2e58" />
+
 
 ---
 
 ### Section Certificates
 Nampilin daftar sertifikat dalam bentuk grid tiga kolom. Tiap kartu ada gambar sertifikat, judul, penerbit, sama tanggal.
 
-<img width="1903" height="941" alt="Screenshot 2026-03-01 151244" src="https://github.com/user-attachments/assets/24389a8f-e36c-403b-abf8-fb8ab0dae6f6" />
+<img width="1903" height="941" alt="Screenshot 2026-03-01 151244" src="https://github.com/user-attachments/assets/21fab4e1-60ff-46f5-9e51-c161ceabda58" />
 
 ---
 
 ### Footer
 Bagian paling bawah, background gelap dengan garis atas oranye. Isinya nama dan tulisan singkat.
 
-<img width="1904" height="102" alt="Screenshot 2026-03-01 151259" src="https://github.com/user-attachments/assets/1fb4ec05-221d-4071-89b2-eb7f25431b41" />
+<img width="1904" height="102" alt="Screenshot 2026-03-01 151259" src="https://github.com/user-attachments/assets/275d337d-2dea-4c42-8c29-53ec44cd8741" />
 
 ---
 
 ## Penjelasan Code Setiap Section
 
 ### Navbar
-Navbar pakai komponen bawaan Bootstrap 5. Class `navbar-expand-lg` yang bikin navbar otomatis jadi tombol hamburger waktu dibuka di HP. `ms-auto` buat dorong menu ke kanan. Warna gelap dan garis oranye di bawahnya diatur sendiri di `style.css`.
+Navbar pakai komponen bawaan Bootstrap 5. Class `navbar-expand-lg` yang bikin navbar otomatis jadi tombol hamburger waktu dibuka di HP. `ms-auto` buat dorong menu ke kanan.
 
 ```html
 <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
@@ -78,7 +81,7 @@ Navbar pakai komponen bawaan Bootstrap 5. Class `navbar-expand-lg` yang bikin na
 ---
 
 ### Section Home
-Layout-nya pakai grid Bootstrap, `col-md-7` buat teks dan `col-md-5` buat foto supaya bisa sejajar. `align-items-center` bikin keduanya rata tengah. Foto dibuat bulat lewat CSS pakai `border-radius: 50%`. Tombolnya pakai class sendiri `.btn-oren` dan `.btn-outline-oren` yang dibuat di `style.css`.
+Layout-nya pakai grid Bootstrap, `col-md-7` buat teks dan `col-md-5` buat foto supaya bisa sejajar. `align-items-center` bikin keduanya rata tengah. Foto dibuat bulat lewat CSS pakai `border-radius: 50%`.
 
 ```html
 <div class="row align-items-center gy-4">
@@ -165,7 +168,7 @@ createApp({
 ---
 
 ### Section Certificates (Vue JS)
-Sertifikat pakai Vue JS biar gampang kalau mau nambah atau ganti data. `id="app-sertifikat"` jadi titik mount, terus `v-for` looping dari array `sertifikat`. Gambarnya nyambung ke data pakai `:src` dan `:alt`. Grid `col-md-6 col-lg-4` dari Bootstrap bikin tampilannya tiga kolom di laptop dan dua kolom di tablet.
+Sertifikat pakai Vue JS biar gampang kalau mau nambah atau ganti data. `id="app-sertifikat"` jadi titik mount, terus `v-for` looping dari array `sertifikat`. Gambarnya nyambung ke data pakai `:src` dan `:alt`.
 
 ```html
 <!-- HTML -->
