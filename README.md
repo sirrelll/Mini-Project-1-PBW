@@ -10,7 +10,7 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum Pemrograman Berba
 |---|---|
 | HTML | Struktur halaman website |
 | CSS | Styling tampilan, warna, dan layout |
-| Bootstrap 5 | Navbar, grid system, card, button, utilities |
+| Bootstrap 5 | Navbar, grid system, card, button |
 | Vue JS | Menampilkan skill, pengalaman, dan sertifikat |
 
 ---
@@ -18,7 +18,7 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum Pemrograman Berba
 ## Tampilan Setiap Section
 
 ### Navbar
-Navbar ada di bagian paling atas halaman, warna gelap dengan garis bawah oranye. Isinya nama dan tiga link buat pindah ke section Home, About Me, dan Certificates.
+Navbar ada di bagian paling atas halaman, Isinya nama dan tiga link buat pindah ke section Home, About Me, dan Certificates.
 
 <img width="1905" height="59" alt="Screenshot 2026-03-01 151213" src="https://github.com/user-attachments/assets/ac91ce33-cd1e-40a0-9fb9-d8adb173de9d" />
 
@@ -49,7 +49,7 @@ Menampilkan daftar sertifikat dalam bentuk grid tiga kolom. Tiap kartu ada gamba
 ---
 
 ### Footer
-Bagian paling bawah, background gelap dengan garis atas oranye. Isinya nama dan tulisan singkat.
+Bagian paling bawah, Isinya nama dan tulisan singkat.
 
 <img width="1904" height="102" alt="Screenshot 2026-03-01 151259" src="https://github.com/user-attachments/assets/275d337d-2dea-4c42-8c29-53ec44cd8741" />
 
@@ -92,7 +92,7 @@ Navbar pakai komponen bawaan Bootstrap 5. Class `navbar-expand-lg` yang bikin na
 ---
 
 ### Section Home
-Layout-nya pakai grid Bootstrap, `col-md-7` buat teks dan `col-md-5` buat foto supaya bisa sejajar. `align-items-center` bikin keduanya rata tengah. Foto dibuat bulat lewat CSS pakai `border-radius: 50%`.
+Layout-nya pakai grid Bootstrap, `col-md-7` buat teks dan `col-md-5` buat foto supaya bisa sejajar. `align-items-center` bikin keduanya rata tengah.
 
 ```
 <!-- home -->
@@ -345,7 +345,7 @@ createApp({
 ---
 
 ### Footer
-Footer dibuat dan distyling dengan Background gelap dan garis atas oranye diatur di `style.css`.
+Footer dibuat sebagai penanda hak cipta.
 
 ```html
 <!-- footer -->
