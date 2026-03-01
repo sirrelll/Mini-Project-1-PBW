@@ -42,7 +42,7 @@ Ada tiga bagian di sini. Kartu Info Diri berisi bio singkat sama info kontak. Ka
 ---
 
 ### Section Certificates
-Nampilin daftar sertifikat dalam bentuk grid tiga kolom. Tiap kartu ada gambar sertifikat, judul, penerbit, sama tanggal.
+Menampilkan daftar sertifikat dalam bentuk grid tiga kolom. Tiap kartu ada gambar sertifikat, judul, penerbit, sama tanggal atau tahun.
 
 <img width="1903" height="941" alt="Screenshot 2026-03-01 151244" src="https://github.com/user-attachments/assets/21fab4e1-60ff-46f5-9e51-c161ceabda58" />
 
