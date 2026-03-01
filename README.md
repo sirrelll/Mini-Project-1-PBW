@@ -155,7 +155,7 @@ Layout-nya pakai grid Bootstrap, `col-md-7` buat teks dan `col-md-5` buat foto s
         <p class="mb-0"><i class="bi bi-mortarboard me-2 warna-oren"></i><strong>Prodi:</strong> Sistem Informasi</p>
         </div>
     </div>
-
+```
 
 ### Section About Me - Skill (Vue JS)
 Bagian skill pakai Vue JS. Elemen `id="app-skill"` jadi tempat Vue aktif. `v-for` dipakai buat looping data skill satu-satu, terus `{{ skill.nama }}` dan `{{ skill.nilai }}` buat nampilin teksnya ke layar. Lebar progress bar-nya nyambung ke data skill lewat `:style`.
