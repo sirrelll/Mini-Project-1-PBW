@@ -8,10 +8,10 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum  Pemrograman Berb
 
 | Teknologi | Kegunaan |
 |---|---|
-| HTML5 | Struktur halaman website |
+| HTML | Struktur halaman website |
 | CSS3 | Styling tampilan, warna, dan layout |
 | Bootstrap 5 | Navbar, grid system, card, button, utilities |
-| Vue JS 3 | Menampilkan skill, pengalaman, dan sertifikat secara dinamis |
+| Vue JS  | Menampilkan skill, pengalaman, dan sertifikat secara dinamis |
 
 ---
 
@@ -19,25 +19,35 @@ Website portofolio pribadi yang dibuat sebagai tugas Praktikum  Pemrograman Berb
 
 ### Navbar
 Navbar fixed di bagian atas halaman dengan background gelap dan garis bawah oranye. Berisi nama sebagai brand dan tiga link navigasi menuju section Home, About Me, dan Certificates. 
+<img width="1905" height="59" alt="Screenshot 2026-03-01 151213" src="https://github.com/user-attachments/assets/5327cf93-d3b0-44b0-a978-bc3a8965c895" />
+
 ---
 
 ### Section Home
 Halaman pertama yang muncul saat website dibuka. Berisi foto profil berbentuk lingkaran di sebelah kanan, dan di sebelah kiri ada nama lengkap, prodi, deskripsi singkat tentang diri, serta dua tombol menuju section About Me dan Certificates.
+<img width="1903" height="947" alt="Screenshot 2026-03-01 151223" src="https://github.com/user-attachments/assets/a8bab498-23c9-4ab9-96f9-1c3af13f3d7a" />
+
 
 ---
 
 ### Section About Me
 Section ini dibagi jadi tiga bagian. Pertama ada kartu Info Diri yang berisi bio singkat, kota asal, email, dan prodi, semuanya ditulis langsung pakai HTML biasa. Kedua ada kartu Skill yang menampilkan progress bar menggunakan Vue JS, datanya diambil dari array `skills` di dalam `data()`. Ketiga ada bagian Pengalaman yang menampilkan kartu-kartu pengalaman organisasi menggunakan Vue JS dengan looping dari array `pengalaman`.
+<img width="1903" height="826" alt="Screenshot 2026-03-01 151235" src="https://github.com/user-attachments/assets/51dce4d8-80bd-4fca-8964-da66c3aff93f" />
+
 
 ---
 
 ### Section Certificates
 Menampilkan daftar sertifikat dalam bentuk grid kartu tiga kolom. Setiap kartu berisi gambar sertifikat, judul, penerbit, dan tanggal. Bagian ini menggunakan Vue JS untuk looping data dari array `sertifikat`, jadi kalau mau tambah sertifikat baru tinggal tambah data di scriptnya tanpa perlu edit HTML.
+<img width="1903" height="941" alt="Screenshot 2026-03-01 151244" src="https://github.com/user-attachments/assets/24389a8f-e36c-403b-abf8-fb8ab0dae6f6" />
+
 
 ---
 
 ### Footer
 Bagian paling bawah halaman dengan background gelap dan garis atas oranye. Berisi nama dan tulisan singkat.
+<img width="1904" height="102" alt="Screenshot 2026-03-01 151259" src="https://github.com/user-attachments/assets/1fb4ec05-221d-4071-89b2-eb7f25431b41" />
+
 
 ---
 
