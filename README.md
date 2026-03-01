@@ -358,5 +358,4 @@ Footer dibuat dan distyling dengan Background gelap dan garis atas oranye diatur
 ```
 
 ---
-# Darel Prasetya Fawwaz | 2409116064 | Sistem Informasi B 24
-# SALAM PUCUK DINGIN viscabarca
+#### Darel Prasetya Fawwaz | 2409116064 | Sistem Informasi B 24 SALAM PUCUK DINGIN viscabarca
